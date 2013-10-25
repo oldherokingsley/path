@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="myo-cn-UHz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eK3-jQ-Cfa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Crl-6V-z2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="loginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mva-7M-vhc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ka8-DG-FaA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.99215692280000001" green="0.03529411927" blue="0.011764707040000001" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="512"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-698" y="-266"/>
+        </scene>
+        <!--Welcome Page View Controller-->
+        <scene sceneID="Kzh-Bw-st1">
+            <objects>
+                <viewController id="myo-cn-UHz" customClass="welcomePageViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="4v3-g3-xcv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QpT-0A-y6F" userLabel="background2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gKi-wu-8H6" userLabel="background1">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2ce-Hx-riW">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kcq-cq-LeS" userLabel="Button - register">
+                                <rect key="frame" x="388" y="666" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerAccount:" destination="myo-cn-UHz" eventType="touchUpInside" id="JO4-oE-yjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7pY-pe-LWr" userLabel="Button - login">
+                                <rect key="frame" x="558" y="666" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99215692280000001" green="0.03529411927" blue="0.011764707040000001" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Login in">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Login:" destination="myo-cn-UHz" eventType="touchUpInside" id="3x0-Ce-eLn"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="DnG-4q-DGJ">
+                                <rect key="frame" x="492" y="626" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Tix-vi-H0v">
+                                <rect key="frame" x="392" y="200" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="backgroundImage1" destination="gKi-wu-8H6" id="byf-Oo-jbL"/>
+                        <outlet property="backgroundImage2" destination="QpT-0A-y6F" id="ZeI-Mh-2zT"/>
+                        <outlet property="imageView" destination="Tix-vi-H0v" id="Itf-LE-JAc"/>
+                        <outlet property="loginButton" destination="7pY-pe-LWr" id="7uJ-SV-rep"/>
+                        <outlet property="pageControll" destination="DnG-4q-DGJ" id="De7-9X-qdM"/>
+                        <outlet property="registerButton" destination="kcq-cq-LeS" id="2xo-m3-04H"/>
+                        <outlet property="scrollView" destination="2ce-Hx-riW" id="oaY-Ey-h7R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytq-JY-k1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="-102"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="lightContent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
